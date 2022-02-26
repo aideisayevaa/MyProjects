@@ -1,0 +1,64 @@
+    @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .header {
+        background-image: url(./img/bg-header.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    
+    .header-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0px;
+    }
+    
+    .header-logo {
+        letter-spacing: 2px;
+        font-size: 16px;
+        border-bottom: 5px solid black;
+        border-radius: 35px;
+        padding-bottom: 10px;
+    }
+    
+    ul {
+        display: flex;
+    }
+    
+    li {
+        margin-left: 27px;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .header-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    h1 {
+        font-size: 8.5rem;
+        font-weight: 100;
+        line-height: 0.4;
+        letter-spacing: 2px;
+        font-family: 'Herr Von Muellerhoff', cursive;
+    }
+    
+    .first-letter {
+        font-family: 'Herr Von Muellerhoff', cursive;
+        font-size: 10.3rem;
+    }
