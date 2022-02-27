@@ -55,7 +55,7 @@
         flex-direction: column;
     }
     
-    h1 {
+    .header-text h1 {
         font-size: 8.5rem;
         font-weight: 100;
         line-height: 0.4;
@@ -68,7 +68,7 @@
         font-size: 10.3rem;
     }
     
-    h3 {
+    .header-text h3 {
         margin-bottom: 15px;
         margin-top: 15px;
         font-size: 22px;
@@ -101,4 +101,115 @@
     
     .btn-coffee:hover::after {
         top: 0;
+    }
+    /* ABOUT */
+    
+    .about {
+        margin-bottom: 150px;
+    }
+    
+    .about-title {
+        margin: 60px 0;
+    }
+    
+    .about-title h2 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: #613017;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .about-title h2::after {
+        content: '';
+        width: 40px;
+        height: 3px;
+        background-color: #613017;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+    }
+    
+    .about-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .about-img {
+        width: 40%;
+    }
+    
+    .about-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .about-text {
+        width: 40%;
+    }
+    
+    .about-text h4 {
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 50px;
+        color: #8B5338;
+        font-family: 'Herr Von Muellerhoff', cursive;
+        letter-spacing: 0.5rem;
+    }
+    
+    #asterisk {
+        color: #8B5338;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .about-text p {
+        font-size: 15px;
+        color: rgb(63, 56, 56);
+    }
+    /* PORTFOLIO */
+    
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .portfolio-item {
+        width: 25%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .portfolio-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .5s;
+    }
+    
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #442110a4;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        color: white;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+    }
+    
+    .portfolio-item:hover .overlay {
+        top: 0%;
+    }
+    
+    .portfolio-item:hover .portfolio-item img {
+        transform: scale(1.1);
     }
