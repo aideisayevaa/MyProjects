@@ -213,3 +213,52 @@
     .portfolio-item:hover .portfolio-item img {
         transform: scale(1.1);
     }
+    /* Contact */
+    
+    .contact-title {
+        margin: 60px 0;
+    }
+    
+    .contact-title h2 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        color: #613017;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .contact-title h2::after {
+        content: '';
+        width: 40px;
+        height: 3px;
+        background-color: #613017;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+    }
+    
+    .contact-content {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: center;
+        flex-basis: 33%;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    
+    .contact-item i {
+        font-size: 25px;
+        margin-bottom: 30px;
+        color: #613017;
+    }
+    
+    .contact-item p {
+        font-size: 14px;
+        line-height: 33px;
+    }
