@@ -21,12 +21,13 @@
                         <h2>COFFEE</h2>
                     </div>
                     <div class="header-menu">
-                        <ul>
+                        <ul id="menuItems">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Discovery</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
+                        <i class="fas fa-bars" id="menu-icon" onclick="menuToggle()"></i>
                     </div>
                 </div>
                 <div class="header-text">
@@ -44,7 +45,7 @@
     <section id="#about">
         <div class="about">
             <div class="container">
-                <div class="about-title">
+                <div class="page-title">
                     <h2>ABOUT</h2>
                 </div>
                 <div class="about-content">
@@ -64,7 +65,7 @@
 
 
     <!-- PORTFOLIO START -->
-    <section id="portfolio">
+    <!--  <section id="portfolio">
         <div class="portfolio">
             <div class="portfolio-item">
                 <img src="./img/1.jpg" alt="">
@@ -115,7 +116,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- PORTFOLIO FINISH -->
 
 
@@ -123,7 +124,7 @@
     <section id="#about">
         <div class="about">
             <div class="container">
-                <div class="about-title">
+                <div class="page-title">
                     <h2>DISCOVER</h2>
                 </div>
                 <div class="about-content">
@@ -147,7 +148,7 @@
     <section id="contact">
         <div class="contact">
             <div class="container">
-                <div class="contact-title">
+                <div class="page-title">
                     <h2>CONTACT</h2>
                 </div>
                 <div class="contact-content">
@@ -169,6 +170,44 @@
         </div>
     </section>
     <!-- CONTACT FINISH -->
+
+
+    <!-- FOOTER START -->
+    <div id="footer">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="page-title">
+                    <h2>ABOUT US</h2>
+                </div>
+                <div class="footer-copyright">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempora perferendis. Voluptatibus obcaecati provident pariatur.</p>
+                    <br>
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER FINISH -->
+
+
+    <script>
+        var menuItems = document.getElementById("menuItems")
+        menuItems.style.maxHeight = "0px";
+
+        function menuToggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px";
+            } else {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 
 
 

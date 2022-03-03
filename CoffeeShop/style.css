@@ -28,15 +28,15 @@
         padding-bottom: 10px;
     }
     
-    ul {
+    .header-menu ul {
         display: flex;
     }
     
-    li {
+    .header-menu ul li {
         margin-left: 27px;
     }
     
-    a {
+    .header-menu ul li a {
         color: black;
         text-decoration: none;
         font-weight: bold;
@@ -96,7 +96,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: .3s;
+        transition: .3s all ease;
     }
     
     .btn-coffee:hover::after {
@@ -108,11 +108,11 @@
         margin-bottom: 150px;
     }
     
-    .about-title {
+    .page-title {
         margin: 60px 0;
     }
     
-    .about-title h2 {
+    .page-title h2 {
         width: 100%;
         text-align: center;
         margin: 0 auto;
@@ -121,7 +121,7 @@
         font-weight: 600;
     }
     
-    .about-title h2::after {
+    .page-title h2::after {
         content: '';
         width: 40px;
         height: 3px;
@@ -135,6 +135,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
     }
     
     .about-img {
@@ -188,7 +189,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: .5s;
+        transition: .5s all ease-in;
     }
     
     .overlay {
@@ -203,40 +204,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: .5s;
+        transition: .5s ease-in all;
+        opacity: 0;
     }
     
     .portfolio-item:hover .overlay {
+        opacity: 1;
         top: 0%;
     }
-    
-    .portfolio-item:hover .portfolio-item img {
-        transform: scale(1.1);
-    }
     /* Contact */
-    
-    .contact-title {
-        margin: 60px 0;
-    }
-    
-    .contact-title h2 {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-        color: #613017;
-        font-size: 30px;
-        font-weight: 600;
-    }
-    
-    .contact-title h2::after {
-        content: '';
-        width: 40px;
-        height: 3px;
-        background-color: #613017;
-        margin: 0 auto;
-        display: block;
-        margin-top: 10px;
-    }
     
     .contact-content {
         margin-top: 60px;
@@ -261,4 +237,100 @@
     .contact-item p {
         font-size: 14px;
         line-height: 33px;
+    }
+    /* FOOTER */
+    
+    .footer {
+        background-color: black;
+        padding: 30px;
+    }
+    
+    .footer-copyright {
+        color: white;
+        text-align: center;
+        flex-basis: 55%;
+        line-height: 24px;
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+    
+    .footer-social ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-social ul li a {
+        color: white;
+        font-size: 25px;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+    
+    #menu-icon {
+        font-size: 28px;
+        display: none;
+    }
+    /* HEADER */
+    
+    @media screen and (max-width:800px) {
+        .header-menu ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            background-color: #553322c2;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height .5s;
+        }
+        .header-menu ul li {
+            margin: 10px 0;
+        }
+        .header-menu ul li a {
+            color: white;
+        }
+        #menu-icon {
+            display: block;
+            cursor: pointer;
+        }
+    }
+    /* ABOUT */
+    
+    @media screen and (max-width:768px) {
+        .about-img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .about-text {
+            width: 80%;
+        }
+    }
+    /* PORTFOLIO */
+    
+    @media (min-width:768px) and (max-width:992px) {
+        .portfolio-item {
+            flex-basis: 33.3%;
+        }
+    }
+    
+    @media (min-width:576px) and (max-width:768px) {
+        .portfolio-item {
+            flex-basis: 50%;
+        }
+    }
+    
+    @media screen and (max-width:576px) {
+        .portfolio-item {
+            flex-basis: 100%;
+        }
+    }
+    
+    @media screen and (max-width:576px) {
+        .contact-content {
+            flex-direction: column;
+        }
     }
