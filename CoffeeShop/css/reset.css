@@ -87,6 +87,10 @@ video {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* HTML5 display-role reset for older browsers */
 

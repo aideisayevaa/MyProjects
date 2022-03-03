@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -49,10 +50,10 @@
                     <h2>ABOUT</h2>
                 </div>
                 <div class="about-content">
-                    <div class="about-img">
-                        <img src="./img/about-1.jpg" alt="">
+                    <div class="about-img anime-left">
+                        <img src="./img/about-1.jpg" alt="" class="anime-left">
                     </div>
-                    <div class="about-text">
+                    <div class="about-text anime-right">
                         <h4>Our Story</h4>
                         <div id="asterisk"><i class="fa-solid fa-asterisk"></i></div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe voluptatem cum corrupti sapiente, nam rerum?<br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, doloribus.</p>
@@ -65,58 +66,58 @@
 
 
     <!-- PORTFOLIO START -->
-    <!--  <section id="portfolio">
+    <section id="portfolio">
         <div class="portfolio">
-            <div class="portfolio-item">
+            <div class="portfolio-item ani1">
                 <img src="./img/1.jpg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-mug-hot"></i>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item ani2">
                 <img src="./img/2.jpg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-cookie-bite"></i>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item ani3">
                 <img src="./img/3.jpg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-mug-hot"></i>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item ani4">
                 <img src="./img/4.jpg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-cookie-bite"></i>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item ani5">
                 <img src="./img/5.jpg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-mug-hot"></i>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item ani6">
                 <img src="./img/1.jpg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-cookie-bite"></i>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item ani7">
                 <img src="./img/2.jpg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-mug-hot"></i>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item ani8">
                 <img src="./img/3.jpg" alt="">
                 <div class="overlay">
                     <i class="fa-solid fa-cookie-bite"></i>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- PORTFOLIO FINISH -->
 
 
@@ -128,10 +129,10 @@
                     <h2>DISCOVER</h2>
                 </div>
                 <div class="about-content">
-                    <div class="about-img">
+                    <div class="about-img anime-left">
                         <img src="./img/discover.jpg" alt="">
                     </div>
-                    <div class="about-text">
+                    <div class="about-text anime-right">
                         <h4>Our Story</h4>
                         <div id="asterisk"><i class="fa-solid fa-asterisk"></i></div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium voluptatibus dolorum similique ducimus repellat. Ad, dolor eos minus magnam necessitatibus non, amet natus repellat aliquid cum dignissimos nobis veritatis ipsum.
@@ -152,16 +153,16 @@
                     <h2>CONTACT</h2>
                 </div>
                 <div class="contact-content">
-                    <div class="contact-item">
+                    <div class="contact-item anime-top">
                         <i class="fa-solid fa-phone"></i>
                         <p>+1 xxx xx xx</p>
                         <p>+1 xxx xx xx</p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item anime-bottom">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item anime-top">
                         <i class="fa-solid fa-envelope"></i>
                         <p>coffee.house@gmail.com</p>
                     </div>
@@ -194,6 +195,65 @@
         </div>
     </div>
     <!-- FOOTER FINISH -->
+
+
+    <script>
+        window.sr = ScrollReveal()
+        sr.reveal('.anime-left', {
+            duration: 2000,
+            origin: 'left',
+            distance: '80px',
+            delay: 250
+        });
+
+        sr.reveal('.anime-right', {
+            duration: 2000,
+            origin: 'right',
+            distance: '80px',
+            delay: 250
+        });
+
+        sr.reveal('.anime-top', {
+            duration: 2000,
+            origin: 'top',
+            distance: '80px',
+            delay: 250
+        });
+
+        sr.reveal('.anime-bottom', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '80px',
+            delay: 250
+        });
+    </script>
+
+    <script>
+        ScrollReveal().reveal('.ani1', {
+            delay: 250
+        });
+        ScrollReveal().reveal('.ani2', {
+            delay: 500
+        });
+        ScrollReveal().reveal('.ani3', {
+            delay: 750
+        });
+        ScrollReveal().reveal('.ani4', {
+            delay: 1000
+        });
+        ScrollReveal().reveal('.ani5', {
+            delay: 1250
+        });
+        ScrollReveal().reveal('.ani6', {
+            delay: 1500
+        });
+        ScrollReveal().reveal('.ani7', {
+            delay: 1750
+        });
+        ScrollReveal().reveal('.ani8', {
+            delay: 2000
+        });
+    </script>
 
 
     <script>
