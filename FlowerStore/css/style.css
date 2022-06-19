@@ -57,6 +57,81 @@
 
 
 
+.product-item-photo {
+    height: 450px;
+    cursor: pointer;
+}
+
+.product-item-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.196);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.product-item-photo:hover .product-item-overlay {
+    opacity: 1;
+    width: 332px;
+    height: 412px;
+    top: 0;
+    left: 0;
+}
+
+
+.product-item-overlay i {
+    padding: 0px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(160, 156, 156);
+    font-size: 0px;
+    margin: 0px;
+    transition: all .6 ease;
+}
+
+.product-item-photo:hover .product-item-overlay i {
+    padding: 15px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.product-item-overlay i:hover {
+    color: black;
+}
+
+.product-item-content p {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.product-item-content p:hover {
+    color: pink;
+}
+
+.product-item-content span i {
+    margin: 20px 2px;
+    color: #E18787;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product-item-icon {
+    background: #E18787;
+    color: black;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
 
 /* Header */
 
@@ -202,79 +277,6 @@
     font-weight: bold;
 }
 
-.product-item-photo {
-    height: 450px;
-    cursor: pointer;
-}
-
-.product-item-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background: rgba(0, 0, 0, 0.196);
-    width: 0;
-    height: 0;
-    opacity: 0;
-    transition: .5s ease;
-}
-
-.product-item-photo:hover .product-item-overlay {
-    opacity: 1;
-    width: 332px;
-    height: 412px;
-    top: 0;
-    left: 0;
-}
-
-
-.product-item-overlay i {
-    padding: 0px;
-    border-radius: 50%;
-    background-color: white;
-    color: rgb(160, 156, 156);
-    font-size: 0px;
-    margin: 0px;
-    transition: all .6 ease;
-}
-
-.product-item-photo:hover .product-item-overlay i {
-    padding: 15px;
-    font-size: 20px;
-    margin: 10px;
-}
-
-.product-item-overlay i:hover {
-    color: black;
-}
-
-.product-item-content p {
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.product-item-content p:hover {
-    color: pink;
-}
-
-.product-item-content span i {
-    margin: 20px 2px;
-    color: #E18787;
-}
-
-.price {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.product-item-icon {
-    background: #E18787;
-    color: black;
-    padding: 10px 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 99;
-}
 
 /* Wedding */
 
@@ -286,4 +288,39 @@
     padding: 40px 0;
     background-position-y: 70px;
     background-position-x: 50%;
+}
+
+/* Holiday */
+
+.holiday-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto auto;
+    grid-gap: 50px;
+}
+
+.holiday-sale {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    background-image: url(../img/holiday.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+
+.holiday-sale h4 {
+    font-size: 36px;
+}
+
+.holiday-sale h1 {
+    font-size: 100px;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.holiday-sale p {
+    width: 70%;
+    text-align: center;
+    margin: 20px;
+    line-height: 26px;
 }
