@@ -1,3 +1,63 @@
+/* Common */
+
+
+
+.button {
+    padding: 25px 100px;
+    background: black;
+    color: white;
+    font-size: 1.3em;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: .6s ease;
+}
+
+.button-effekt {
+    background: white;
+    position: absolute;
+    top: -1px;
+    left: -400px;
+    height: 52px;
+    width: 202px;
+    opacity: 0;
+    transition: .6s ease-in;
+    color: black;
+    z-index: 1;
+}
+
+.button:hover .button-effekt {
+    left: -1px;
+    opacity: 1;
+}
+
+.button:hover {
+    color: black;
+}
+
+.button span {
+    position: absolute;
+    z-index: 5;
+    top: 13px;
+    left: 53px;
+}
+
+
+
+.header-text {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-span {
+    font-size: 20px;
+    color: gray;
+    margin: 20px 0;
+}
+
+
+
+
 /* Header */
 
 .menu {
@@ -66,46 +126,6 @@
     line-height: 25px;
 }
 
-.button {
-    padding: 25px 100px;
-    background: black;
-    color: white;
-    font-size: 1.3em;
-    position: relative;
-    overflow: hidden;
-    border: none;
-    transition: .6s ease;
-}
-
-.button-effekt {
-    background: white;
-    position: absolute;
-    top: -1px;
-    left: -400px;
-    height: 52px;
-    width: 202px;
-    opacity: 0;
-    transition: .6s ease-in;
-    color: black;
-    z-index: 1;
-}
-
-.button:hover .button-effekt {
-    left: -1px;
-    opacity: 1;
-}
-
-.button:hover {
-    color: black;
-}
-
-.button span {
-    position: absolute;
-    z-index: 5;
-    top: 13px;
-    left: 53px;
-}
-
 /* Who Banner */
 
 #who-banner {
@@ -142,4 +162,116 @@
     line-height: 31px;
     font-size: 21px;
     margin-top: 33px;
+}
+
+
+/* Collection */
+
+#collection {
+    padding-right: 70px;
+}
+
+.collection-header {
+    margin-bottom: 40px;
+}
+
+.collection-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 50px;
+}
+
+
+.collection-sale {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    background-image: url(../img/collection.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+
+.collection-sale h4 {
+    font-size: 36px;
+}
+
+.collection-sale h1 {
+    font-size: 100px;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.collection-item-photo {
+    height: 450px;
+    cursor: pointer;
+}
+
+.collection-item-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.196);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.collection-item-photo:hover .collection-item-overlay {
+    opacity: 1;
+    width: 332px;
+    height: 412px;
+    top: 0;
+    left: 0;
+}
+
+
+.collection-item-overlay i {
+    padding: 0px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(160, 156, 156);
+    font-size: 0px;
+    margin: 0px;
+    transition: all .6 ease;
+}
+
+.collection-item-photo:hover .collection-item-overlay i {
+    padding: 15px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.collection-item-overlay i:hover {
+    color: black;
+}
+
+.collection-item-content p {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.collection-item-content p:hover {
+    color: pink;
+}
+
+.collection-item-content span i {
+    margin: 20px 2px;
+    color: #E18787;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.collection-item-icon {
+    background: #E18787;
+    color: black;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
 }
