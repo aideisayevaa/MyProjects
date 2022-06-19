@@ -1,3 +1,5 @@
+/* Header */
+
 .menu {
     font-size: 1.3em;
 }
@@ -102,4 +104,42 @@
     z-index: 5;
     top: 13px;
     left: 53px;
+}
+
+/* Who Banner */
+
+#who-banner {
+    background-image: url(../img/who-we-are.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.who-content {
+    width: 50%;
+}
+
+.who-header h1 {
+    font-size: 78px;
+    color: #7e707047;
+    font-weight: bold;
+    z-index: 5;
+    top: -35px;
+    left: -104px;
+    width: 271%;
+}
+
+.who-header h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    z-index: 6;
+}
+
+.who-content p {
+    letter-spacing: 1px;
+    line-height: 31px;
+    font-size: 21px;
+    margin-top: 33px;
 }
