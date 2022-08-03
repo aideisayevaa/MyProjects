@@ -6,10 +6,11 @@
     }
     
     .header {
-        background-image: url(./img/bg-header.jpg);
+        background-image: url(../img/bg-header.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: center center;
         background-attachment: fixed;
+        background-repeat: no-repeat;
         height: 100vh;
     }
     

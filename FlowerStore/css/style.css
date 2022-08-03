@@ -135,6 +135,10 @@
 
 /* Header */
 
+#header{
+    height: 900px;
+}
+
 .menu {
     font-size: 1.3em;
 }
@@ -323,4 +327,192 @@
     text-align: center;
     margin: 20px;
     line-height: 26px;
+}
+
+
+/* Banner */
+
+#banner {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    /* position: relative; */
+
+}
+
+/* .banner { */
+/* position: absolute; */
+/*  top: 245px;
+    left: 55%;
+    z-index: 6; */
+/* } */
+
+/* .banner-img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+} */
+
+/* .banner-img img {
+    width: 100%;
+} */
+
+
+.banner-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+
+}
+
+.banner-content p {
+    margin: 23px 0;
+    width: 80%;
+    line-height: 30px;
+}
+
+
+/* Brand */
+
+
+#brand {
+    position: relative;
+
+}
+
+.brand {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-main img {
+    width: 100%;
+}
+
+/* Blogs */
+
+#blog {
+    padding: 60px 40px;
+}
+
+.blog-details span {
+    color: rgb(160, 160, 160);
+    font-size: 13px;
+}
+
+.blog-details span i {
+    margin-right: 12px;
+}
+
+.second-detail::before {
+    content: "";
+    height: 20px;
+    width: 1.5px;
+    background-color: rgb(160, 160, 160);
+    position: absolute;
+    left: 28%;
+}
+
+.blog-title {
+    font-size: 27px;
+    line-height: 29px;
+    font-weight: bold;
+    margin: 34px 0 15px 0;
+    cursor: pointer;
+    transition: .3 ease
+}
+
+.blog-title:hover {
+    color: #E18787;
+}
+
+.blog-content img {
+    cursor: pointer;
+}
+
+/* Footer */
+
+#footer {
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    grid-template-rows: 3fr 1fr;
+    padding: 70px 40px;
+
+}
+
+.footer-signup {
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+    padding: 30px;
+    background-image: url(../img/footer-newsletter.png);
+    background-repeat: no-repeat;
+}
+
+.footer-main h6 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.footer-main ul li {
+    color: rgb(164, 163, 163);
+    margin: 15px 0;
+    font-size: 17px;
+}
+
+.footer-signup h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.footer-signup p {
+    font-size: 18px;
+    color: gray;
+    line-height: 23px;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.footer-signup input {
+    padding: 10px 20px;
+    color: gray;
+    display: block;
+    margin: 20px 0;
+}
+
+.footer-contact {
+    margin-top: 30px;
+    font-size: 18px;
+    grid-row: 2 / 3;
+    grid-column: 1/4;
+}
+
+.footer-contact i {
+    margin: 0 8px;
+    font-size: 21px;
+}
+
+.footer-bottom{
+    border-top: 1px solid rgb(176, 176, 176);
+    padding: 30px 0;
+    font-size: 20px;
+    color: gray;
+}
+
+.footer-bottom span{
+    cursor: pointer;
+}
+
+.footer-bottom span:hover{
+    color: #E18787;
 }
